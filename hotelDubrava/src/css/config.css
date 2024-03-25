@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    .styleLinkNav {
+        @apply text-slate-500 no-underline hover:text-white hover:bg-[#9e2a2b] 
+        transition-colors p-1 rounded mr-1 focus:ring-2 focus:ring-[#9e2a2b]
+        text-wrap md:text-xs min-[900px]:text-sm max-[1023px]:text-sm lg:text-base
+    }
+    
+    #root{
+        @apply w-screen
+    }
+
+    .footer-areas{
+        grid-template-areas: 
+        "footer-logo"
+        "footer-title-nav"
+        "footer-links"
+        "footer-data"
+        "footer-copy"
+        "footer-social"
+        ;
+    }
+
+    .footer-areas-sm{
+        grid-template-areas: 
+        "footer-logo footer-logo"
+        "footer-title-nav footer-title-nav"
+        "footer-links footer-links"
+        "footer-data footer-data"
+        "footer-copy footer-social";
+    }
+
+    /* .nav-area{
+        grid-template-areas: 
+        "logo"
+        "imgMenu"
+        "itemNav"
+    } */
+
+
+}
