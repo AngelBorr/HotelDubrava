@@ -1,21 +1,24 @@
 export const listDataImgInicio = [
     {
         original: "/img/fachada1.jpg",
-        originalHeight: '100%',
+        additionalClass:'lg:h-[600px] h-[300px]',
+        originalHeight: '600px',
         originalWidth: 'w-[90]',
-        size: "1000px 600px"
+        size: "1000px "
     },
     {
         original: '/img/fachada2.jpg',
-        originalHeight: '100%',
+        additionalClass:'lg:h-[600px] h-[300px]',
+        originalHeight: '600px',
         originalWidth: 'w-[90]',
-        size: "1000px 600px"
+        size: "max-w-[1000px] "
     },
     {
         original: '/img/fachada3.jpg',
-        originalHeight: '100%',
+        additionalClass:'lg:h-[600px] h-[300px]',
+        originalHeight: '600px',
         originalWidth: 'w-[90]',
-        size: "1000px 600px"
+        size: "max-w-[1000px] "
     }
 ]
 

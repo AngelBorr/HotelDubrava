@@ -8,7 +8,7 @@ export const Footer2 = () => {
             <CDBBox className="md:flex-col md:flex mx-auto py-3 md:w-[90%]">
                 <CDBBox className="md:flex-wrap md:flex md:justify-between">
                     <CDBBox className='justify-center flex'>
-                        <a href="/" className="md:flex md:items-center md:p-0">
+                        <a href="/" className=" w-56 md:w-64 lg:w-72 md:flex md:items-center md:p-0">
                         <img
                             className='bg-[#335c67] '
                             alt="logo"
@@ -18,27 +18,27 @@ export const Footer2 = () => {
                         <span className="ms-3 h5 font-weight-bold"></span>
                         </a>
                     </CDBBox>
-                    <CDBBox className='flex md:justify-between justify-around sm:w-full items-center md:w-[55%]'>
-                        <CDBBox>
-                            <p className="h5 mb-4 w-full" style={{ fontWeight: '600' }}>
+                    <CDBBox className=' pl-4 pr-4 md:pl-0 md:pr-0 flex md:justify-between justify-around sm:w-full items-center md:w-[55%]'>
+                        <CDBBox >
+                            <p className="text-white text-base md:text-lg mb-2 md:mb-4 w-full md:pt-6" style={{ fontWeight: '600' }}>
                                 Navegacion
                             </p>
-                            <CDBBox className='p-0 flex flex-col cursor-pointer w-full'>
-                                <a className='no-underline' href="/">Inicio</a>
-                                <a className='no-underline' href="/">Acerca del Hotel</a>
-                                <a className='no-underline' href="/">Habitaciones</a>
-                                <a className='no-underline' href="/">Promociones</a>
-                                <a className='no-underline' href="/">Reservas</a>
-                                <a className='no-underline' href="/">Servicios</a>
-                                <a className='no-underline' href="/">Contacto</a>
-                                <a className='no-underline' href="/">Ubicacion</a>
+                            <CDBBox className='text-sm md:text-base lg:text-lg p-0 flex flex-col cursor-pointer w-full'>
+                                <a className='no-underline text-[#ea7f80] hover:text-[#c9393a]' href="/">Inicio</a>
+                                <a className='no-underline text-[#ea7f80] hover:text-[#c9393a]' href="/">Acerca del Hotel</a>
+                                <a className='no-underline text-[#ea7f80] hover:text-[#c9393a]' href="/">Habitaciones</a>
+                                <a className='no-underline text-[#ea7f80] hover:text-[#c9393a]' href="/">Promociones</a>
+                                <a className='no-underline text-[#ea7f80] hover:text-[#c9393a]' href="/">Reservas</a>
+                                <a className='no-underline text-[#ea7f80] hover:text-[#c9393a]' href="/">Servicios</a>
+                                <a className='no-underline text-[#ea7f80] hover:text-[#c9393a]' href="/">Contacto</a>
+                                <a className='no-underline text-[#ea7f80] hover:text-[#c9393a]' href="/">Ubicacion</a>
                             </CDBBox>
                         </CDBBox>
                         <CDBBox>
                             <div className="mb-4 hidden md:flex">
                                 <img src="/img/LogoHotelDubrava-estilo4-removebg-preview.png" alt="logo hotel dubrava" />
                             </div>
-                            <CDBBox className='flex flex-col p-0 cursor-pointer'>
+                            <CDBBox className=' text-[#ea7f80] flex flex-col p-0 cursor-pointer text-sm md:text-base lg:text-lg'>
                                 <ul>                                    
                                     <li className='list-none'>Irigoyen 121. Ostende, Pinamar.</li>
                                     <li className='list-none'>Buenos Aires, Argentina</li>
@@ -50,9 +50,9 @@ export const Footer2 = () => {
                         </CDBBox>
                     </CDBBox>
                 </CDBBox>
-                <CDBBox className="md:mt-4 flex justify-between p-2">
-                    <small className="ms-2">&copy; Hotel Dubrava, 2024. All rights reserved.</small>
-                    <CDBBox className="flex">                        
+                <CDBBox className="md:mt-4 flex justify-center md:justify-between p-2">
+                    <small className="ms-2 text-white">&copy; Hotel Dubrava, 2024. All rights reserved.</small>
+                    <CDBBox className=" hidden md:flex">                        
                         <CDBBtn color="dark" className="p-2">
                             <CDBIcon fab icon="facebook-f" />
                         </CDBBtn>

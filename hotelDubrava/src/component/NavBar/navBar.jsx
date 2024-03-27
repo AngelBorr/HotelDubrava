@@ -10,8 +10,8 @@ const NavBar = () => {
     return (
         <div className="p-2 border shadow w-screen flex bg-white flex-col">
             <nav className='flex justify-between'>
-                <div className='flex justify-start'>                
-                <img className='pt-[10px]' src="/img/LogoHotelDubrava-estilo4-removebg-preview.png" alt="logo hotel dubrava" />
+                <div className='w-[280px] md:w-[310px] lg:w-[340px] flex justify-start'>                
+                    <img className='pt-[10px]' src="/img/LogoHotelDubrava-estilo4-removebg-preview.png" alt="logo hotel dubrava" />
                 </div>
 
                 <div className="flex justify-end pt-1">
@@ -75,7 +75,7 @@ const NavBar = () => {
                     </NavLink>
                     <NavLink
                         className="styleLinkNav"
-                        href="#link"
+                        href="ubicacion"
                         to={"/ubicacion"}
                         >
                         Ubicacion
@@ -117,7 +117,7 @@ const NavBar = () => {
                     <NavLink
                         className="flex justify-end no-underline text-slate-500 hover:text-white hover:bg-[#9e2a2b] transition-colors p-1 rounded mr-1 focus:ring-2 focus:ring-[#9e2a2b]"
                         href="#home"
-                        to={"/reservas"}
+                        to={"/checkIn"}
                     >
                         Reservas
                     </NavLink>
