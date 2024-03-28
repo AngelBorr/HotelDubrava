@@ -918,6 +918,11 @@ video {
   border-color: rgb(169 44 45 / var(--tw-border-opacity));
 }
 
+.border-\[\#ea7f80\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(234 127 128 / var(--tw-border-opacity));
+}
+
 .bg-\[\#335c67\] {
   --tw-bg-opacity: 1;
   background-color: rgb(51 92 103 / var(--tw-bg-opacity));
@@ -941,6 +946,11 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#fbe5e5\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 229 229 / var(--tw-bg-opacity));
 }
 
 .fill-blue-600 {
@@ -1024,6 +1034,18 @@ video {
   padding-top: 10px;
 }
 
+.pr-1 {
+  padding-right: 0.25rem;
+}
+
+.pb-2 {
+  padding-bottom: 0.5rem;
+}
+
+.pt-4 {
+  padding-top: 1rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1094,6 +1116,16 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-\[white\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-\[\#fff\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .no-underline {
   text-decoration-line: none;
 }
@@ -1132,6 +1164,28 @@ video {
   }
 }
 
+.hover\:border-2:hover {
+  border-width: 2px;
+}
+
+.hover\:border-4:hover {
+  border-width: 4px;
+}
+
+.hover\:border:hover {
+  border-width: 1px;
+}
+
+.hover\:border-\[\#3f1010\]:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(63 16 16 / var(--tw-border-opacity));
+}
+
+.hover\:border-\[\#c9393a\]:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(201 57 58 / var(--tw-border-opacity));
+}
+
 .hover\:bg-\[\#8c2829\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(140 40 41 / var(--tw-bg-opacity));
@@ -1140,6 +1194,11 @@ video {
 .hover\:bg-\[\#9e2a2b\]:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(158 42 43 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[\#fff\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .hover\:text-\[\#c9393a\]:hover {
@@ -1259,6 +1318,10 @@ video {
     width: 100%;
   }
 
+  .md\:w-\[80\%\] {
+    width: 80%;
+  }
+
   .md\:basis-2\/4 {
     flex-basis: 50%;
   }
@@ -1366,6 +1429,10 @@ video {
 
   .lg\:w-\[340px\] {
     width: 340px;
+  }
+
+  .lg\:w-\[60\%\] {
+    width: 60%;
   }
 
   .lg\:basis-1\/4 {
