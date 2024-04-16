@@ -24,14 +24,14 @@ export const Footer2 = () => {
                                 Navegacion
                             </p>
                             <CDBBox className='text-sm md:text-base lg:text-lg p-0 flex flex-col cursor-pointer w-full'>
-                                <a className='no-underline text-[#ea7f80] hover:text-[#c9393a]' href="/">Inicio</a>
-                                <a className='no-underline text-[#ea7f80] hover:text-[#c9393a]' href="/">Acerca del Hotel</a>
-                                <a className='no-underline text-[#ea7f80] hover:text-[#c9393a]' href="/">Habitaciones</a>
-                                <a className='no-underline text-[#ea7f80] hover:text-[#c9393a]' href="/">Promociones</a>
-                                <a className='no-underline text-[#ea7f80] hover:text-[#c9393a]' href="/">Reservas</a>
-                                <a className='no-underline text-[#ea7f80] hover:text-[#c9393a]' href="/">Servicios</a>
-                                <a className='no-underline text-[#ea7f80] hover:text-[#c9393a]' href="/">Contacto</a>
-                                <a className='no-underline text-[#ea7f80] hover:text-[#c9393a]' href="/">Ubicacion</a>
+                                <a className='no-underline text-[#ea7f80] hover:text-[#c9393a]' href="/inicio">Inicio</a>
+                                <a className='no-underline text-[#ea7f80] hover:text-[#c9393a]' href="/nosotros">Acerca del Hotel</a>
+                                <a className='no-underline text-[#ea7f80] hover:text-[#c9393a]' href="/habitaciones">Habitaciones</a>
+                                <a className='no-underline text-[#ea7f80] hover:text-[#c9393a]' href="/promociones">Promociones</a>
+                                <a className='no-underline text-[#ea7f80] hover:text-[#c9393a]' href="/checkIn">Reservas</a>
+                                <a className='no-underline text-[#ea7f80] hover:text-[#c9393a]' href="/servicios">Servicios</a>
+                                <a className='no-underline text-[#ea7f80] hover:text-[#c9393a]' href="/contacto">Contacto</a>
+                                <a className='no-underline text-[#ea7f80] hover:text-[#c9393a]' href="/ubicacion">Ubicacion</a>
                             </CDBBox>
                         </CDBBox>
                         <CDBBox>
@@ -45,7 +45,7 @@ export const Footer2 = () => {
                                     <li className='list-none'>Tel / Fax: (02254-482566)</li>
                                     <li className='list-none'>reservas@hoteldubrava.com.ar</li>
                                 </ul>
-                                
+                                                                
                             </CDBBox>
                         </CDBBox>
                     </CDBBox>
@@ -53,14 +53,14 @@ export const Footer2 = () => {
                 <CDBBox className="md:mt-4 flex justify-center md:justify-between p-2">
                     <small className="ms-2 text-white">&copy; Hotel Dubrava, 2024. All rights reserved.</small>
                     <CDBBox className=" hidden md:flex">                        
-                        <CDBBtn color="dark" className="p-2">
-                            <CDBIcon fab icon="facebook-f" />
+                        <CDBBtn color="dark" className="p-2" target="_blank" href="https://www.facebook.com/">
+                            <CDBIcon no-referrer fab icon="facebook-f"/>
                         </CDBBtn>
-                        <CDBBtn flat color="dark" className="mx-3 p-2">
-                            <CDBIcon fab icon="twitter" />
+                        <CDBBtn flat color="dark" className="mx-3 p-2" target="_blank" href="https://www.twitter.com/">
+                            <CDBIcon no-referrer fab icon="twitter" />
                         </CDBBtn>
-                        <CDBBtn flat color="dark" className="p-2">
-                            <CDBIcon fab icon="instagram" />
+                        <CDBBtn flat color="dark" className="p-2" target="_blank" href="https://www.instagram.com/">
+                            <CDBIcon no-referrer fab icon="instagram" />
                         </CDBBtn>
                     </CDBBox>
                 </CDBBox>
