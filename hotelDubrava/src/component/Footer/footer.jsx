@@ -28,7 +28,7 @@ export const Footer2 = () => {
                                 <a className='no-underline text-[#ea7f80] hover:text-[#c9393a]' href="/nosotros">Acerca del Hotel</a>
                                 <a className='no-underline text-[#ea7f80] hover:text-[#c9393a]' href="/habitaciones">Habitaciones</a>
                                 <a className='no-underline text-[#ea7f80] hover:text-[#c9393a]' href="/promociones">Promociones</a>
-                                <a className='no-underline text-[#ea7f80] hover:text-[#c9393a]' href="/checkIn">Reservas</a>
+                                <a className='no-underline text-[#ea7f80] hover:text-[#c9393a]' href="/checkIn">Check In</a>
                                 <a className='no-underline text-[#ea7f80] hover:text-[#c9393a]' href="/servicios">Servicios</a>
                                 <a className='no-underline text-[#ea7f80] hover:text-[#c9393a]' href="/contacto">Contacto</a>
                                 <a className='no-underline text-[#ea7f80] hover:text-[#c9393a]' href="/ubicacion">Ubicacion</a>
@@ -51,7 +51,7 @@ export const Footer2 = () => {
                     </CDBBox>
                 </CDBBox>
                 <CDBBox className="md:mt-4 flex justify-center md:justify-between p-2">
-                    <small className="ms-2 text-white">&copy; Hotel Dubrava, 2024. All rights reserved.</small>
+                    <small className="ms-2 text-white">&copy; Hotel Dubrava © Año 2024 está bajo licencia CC BY-NC-ND 4.0 </small>
                     <CDBBox className=" hidden md:flex">                        
                         <CDBBtn color="dark" className="p-2" target="_blank" href="https://www.facebook.com/">
                             <CDBIcon no-referrer fab icon="facebook-f"/>
