@@ -32,9 +32,12 @@ Este proyecto cuenta los siguientes scrypts para su uso dependiendo del entorno 
 ### Iniciando el servidor de desarrollo local
 
 npm run dev
+
+### Iniciando el servidor de desarrollo con scanTailwwind
+
 npm run scanTailwind
 
-## Depoid
+## Deploy
 
 Para realizar una despliegue a un servidor de producción es necesario utilizar el siguiente scripts:
 

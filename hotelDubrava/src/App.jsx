@@ -15,6 +15,8 @@ import Servicios from './component/pages/Servicios/servicios.jsx'
 import Contacto from './component/pages/Contacto/contacto.jsx';
 import Ubicacion from './component/pages/ubicacion/ubicacion.jsx'
 import Inicio from './component/pages/Inicio/inicio.jsx';
+import ConfirmContact from './component/pages/ConfirmContact/confirmContact.jsx';
+import ErrorContact from './component/pages/ErrorContact/errorContact.jsx';
 
 function App() {
 
@@ -46,6 +48,8 @@ function App() {
             <Route path='/servicios' element={<Servicios/>}/>
             <Route path='/contacto' element={<Contacto/>}/>
             <Route path='/ubicacion' element={<Ubicacion/>}/>
+            <Route path='/confirmContact' element={<ConfirmContact/>}/>
+            <Route path='/errorContact' element={<ErrorContact/>}/>
           </Routes>
         )
       }

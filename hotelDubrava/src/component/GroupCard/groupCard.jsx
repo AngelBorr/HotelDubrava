@@ -5,7 +5,7 @@ const GroupCard = ({dataCards}) => {
                 dataCards.map((item) => {
                     
                     return (
-                        <article className='p-2 rounded bg-[#f8d0d0] border-1 border-[#7b3c3b] overflow-hidden object-center mt-2 md:mt-0 md:w-full md:ml-1 md:mr-1 md:pt-0'>
+                        <article key={item.id} className='p-2 rounded bg-[#f8d0d0] border-1 border-[#7b3c3b] overflow-hidden object-center mt-2 md:mt-0 md:w-full md:ml-1 md:mr-1 md:pt-0'>
                             <div className='h-60'>
                                 <img className="h-full w-full object-cover" src={item.images} alt={item.alt} />
                             </div>
