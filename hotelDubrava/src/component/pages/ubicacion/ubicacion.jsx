@@ -1,3 +1,5 @@
+import React from "react"
+
 const Ubicacion = () => {
     return (
         <main className="container pt-2">

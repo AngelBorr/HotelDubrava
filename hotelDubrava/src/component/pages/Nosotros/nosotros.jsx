@@ -1,3 +1,5 @@
+import React from "react"
+
 const Nosotros = () => {
     return (
         <main className="pt-3 pb-3 ">

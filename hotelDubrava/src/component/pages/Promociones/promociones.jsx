@@ -1,3 +1,5 @@
+import React from "react"
+
 const Promociones = () => {
     return (
         <main className="container p-2">

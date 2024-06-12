@@ -1,3 +1,4 @@
+import React from 'react';
 import ImageGallery from 'react-image-gallery';
 import GroupCard from '../../GroupCard/groupCard.jsx';
 import { dataGroupCard, listDataImgDescuentos, listDataImgInicio } from '../../../assets/data.js';

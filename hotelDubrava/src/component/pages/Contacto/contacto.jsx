@@ -1,51 +1,9 @@
-import { useState } from "react"
+import React from 'react'
+import useFormContactData from '../../../hooks/useFormContactData.js'
 
 const Contacto = () => {
 
-    const [datos, setDatos] = useState({
-        nombre: '',
-        apellido: '',
-        email: '',
-        telefono: '',
-        mensaje: ''
-    })
-
-    const handleInputChange = (event) => {        
-        setDatos({
-            ...datos,
-            [event.target.name] : event.target.value
-        })
-    }
-
-    const enviarDatos = (event) => {
-        event.preventDefault()        
-        try {            
-            if(!datos){
-                throw new Error("Faltan campos por llenar, verifique los datos ingresados")
-            }else{                      
-                fetch('http://localhost:8080/contactMailing', {
-                    method: 'POST',
-                    body: JSON.stringify(datos),        
-                    headers:{
-                        'Content-Type':'application/json'
-                    }
-                }).then(result => {
-                    result.json()
-                    try {                         
-                        if(result.status === 200){
-                            window.location.replace('/confirmContact') 
-                        }else{
-                            window.location.replace('/errorContact') 
-                        }
-                    } catch (error) {
-                        console.log(error.message)
-                    }
-                })
-            }
-        } catch (error) {
-            console.log(error.message)
-        }
-    }
+    const { datos, handleInputChange, enviarDatos } = useFormContactData()
 
     return (
         <main className="container font-sans">
@@ -66,6 +24,7 @@ const Contacto = () => {
                             id=""
                             placeholder="Nombre" 
                             required
+                            value={datos.nombre}
                             onChange={handleInputChange}
                             pattern='[a-z,A-Z]{4,20}'
                         />
@@ -78,6 +37,7 @@ const Contacto = () => {
                             id="" 
                             placeholder="Apellido" 
                             required
+                            value={datos.apellido}
                             onChange={handleInputChange}
                             pattern='[a-z,A-Z]{2,20}'
                         /><br/>
@@ -89,22 +49,27 @@ const Contacto = () => {
                             id="" 
                             placeholder="Teléfono" 
                             required
+                            value={datos.telefono}
                             onChange={handleInputChange}
                             pattern="[0-9]{3,13}"
                         /><br/>
 
                         <label className="pt-2" htmlFor="">Email</label>
-                        <input className="hover:border-[#3f1010] bg-[#fbe5e5] w-full p-1 border-1 border-[#ea7f80] rounded" type="email" 
+                        <input className="hover:border-[#3f1010] bg-[#fbe5e5] w-full p-1 border-1 border-[#ea7f80] rounded" 
+                            type="email" 
                             name="email" 
                             id="" 
                             placeholder="Correo electrónico" 
                             required
+                            value={datos.email}
                             onChange={handleInputChange}
+                            pattern='/\S+@\S+\.\S+/'
                         /><br/>
 
                         <label className="pt-2" htmlFor="" name='mensaje'>Mensaje</label>
                         <textarea className="hover:border-[#3f1010] bg-[#fbe5e5] w-full p-1 border-1 border-[#ea7f80] rounded" name="mensaje" 
                             placeholder="Tu Mensaje"
+                            value={datos.mensaje}
                             onChange={handleInputChange}
                             pattern="[a-z, A-Z]{10,200}" 
                             field-sizing='content'>

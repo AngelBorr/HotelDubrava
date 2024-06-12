@@ -1,3 +1,4 @@
+import React from "react"
 import { dataGroupCard } from "../../../assets/data"
 import GroupCard from "../../GroupCard/groupCard"
 

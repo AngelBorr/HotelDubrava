@@ -1,3 +1,5 @@
+import React from "react"
+
 const ErrorContact = () => {
     return (
         <main className="container rounded border border-[#a92c2d] h-[150px] mt-2 mb-2 content-center">

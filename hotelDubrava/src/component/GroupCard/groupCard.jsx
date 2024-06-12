@@ -1,3 +1,5 @@
+import React from "react";
+
 const GroupCard = ({dataCards}) => {
     return (
         <div className='block w-screen md:flex md:flex-row md:flex-nowrap md:m-1'>

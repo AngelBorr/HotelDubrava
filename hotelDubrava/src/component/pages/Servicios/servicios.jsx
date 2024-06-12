@@ -1,3 +1,5 @@
+import React from "react"
+
 const Servicios = () => {
     return (
         <main className="container pt-2 font-sans text-justify">
